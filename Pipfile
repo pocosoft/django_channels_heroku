@@ -7,6 +7,8 @@ name = "pypi"
 django = "*"
 channels = "*"
 channels-redis = "*"
+django-heroku = "*"
+gunicorn = "*"
 
 [dev-packages]
 

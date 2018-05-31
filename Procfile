@@ -1,0 +1,1 @@
+web: gunicorn django_channels_heroku.wsgi
