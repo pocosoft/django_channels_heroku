@@ -132,6 +132,5 @@ CHANNEL_LAYERS = {
         'CONFIG': {
             "hosts": [os.environ.get('REDIS_URL', 'redis://localhost:6379')],
         },
-        "symmetric_encryption_keys": [SECRET_KEY],
     },
 }
