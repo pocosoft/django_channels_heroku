@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "173fcd9c0804c89b1a1cfff7b21a6d5ff462a333b07692bb07e5cc27a8092e8e"
+            "sha256": "cd13a205e75c8dcb175daa0613fd491d17905d599148cb0e948d44df07389a29"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -86,6 +86,7 @@
                 "sha256:06faadc685da8df991f01d647fd9bae3778cf8ce83b85b170af15629056a1bf2",
                 "sha256:b1cd7481dae553d5c933f1c45cf7bb991e0e6a9b2a7d0a8afbf744beaaf7fa80"
             ],
+            "index": "pypi",
             "version": "==2.1.2"
         },
         "dj-database-url": {
@@ -110,14 +111,6 @@
             ],
             "index": "pypi",
             "version": "==0.3.1"
-        },
-        "gunicorn": {
-            "hashes": [
-                "sha256:7ef2b828b335ed58e3b64ffa84caceb0a7dd7c5ca12f217241350dec36a1d5dc",
-                "sha256:bc59005979efb6d2dd7d5ba72d99f8a8422862ad17ff3a16e900684630dd2a10"
-            ],
-            "index": "pypi",
-            "version": "==19.8.1"
         },
         "hiredis": {
             "hashes": [
