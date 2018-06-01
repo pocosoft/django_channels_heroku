@@ -133,6 +133,6 @@ CHANNEL_LAYERS = {
     },
 }
 
-IS_TRAVIS = os.environ.get('IS_TRAVIS', False)
-if not IS_TRAVIS:
+IS_CI = os.environ.get('IS_CI', False)
+if not IS_CI:
     django_heroku.settings(locals())

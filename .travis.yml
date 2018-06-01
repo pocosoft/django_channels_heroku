@@ -4,7 +4,7 @@ python:
 services:
   - redis-server
 env:
-  - IS_TRAVIS=true
+  - IS_CI=true
 install:
   - pip install -r requirements.txt
 script:
