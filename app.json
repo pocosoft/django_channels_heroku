@@ -1,0 +1,16 @@
+{
+  "name": "Django Channels Heroku",
+  "description": "Running a simple chat on Heroku",
+  "repository": "https://github.com/pocosoft/django_channels_heroku",
+  "keywords": ["django", "channels", "websockets", "heroku"],
+  "scripts": {
+    "postdeploy": "python manage.py migrate"
+  },
+  "env": {
+    "SECRET_KEY": {
+      "description": "Django's SECRET_KEY setting",
+      "generator": "secret"
+    }
+  },
+  "addons": ["heroku-postgresql", "heroku-redis"]
+}
