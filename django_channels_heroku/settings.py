@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '4dj_i%)p4)e#&b5&pdxama$vt#u@!4y#($sb6k9roz#fxm*&4t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', True)
 
 ALLOWED_HOSTS = ['*']
 
@@ -84,8 +84,6 @@ DATABASES = {
     }
 }
 
-django_heroku.settings(locals())
-
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
@@ -134,3 +132,7 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
+IS_TRAVIS = os.environ.get('IS_TRAVIS', False)
+if not IS_TRAVIS:
+    django_heroku.settings(locals())
