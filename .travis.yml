@@ -1,6 +1,8 @@
 language: python
 python:
   - "3.6"
+env:
+  - DATABASE_URL=postgres://postgres@localhost/travisdb
 install:
   - pip install -r requirements.txt
 script:
